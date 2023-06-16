@@ -6,7 +6,7 @@ export default {
 
 <template>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark shadow" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="#">My projects</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -19,14 +19,14 @@ export default {
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <RouterLink :to="{ name: 'home' }" class="nav-link">
-                                    home
+                                    Home
                                 </RouterLink>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <RouterLink :to="{ name: 'projects' }" class="nav-link">
-                                    projects
+                                    Projects
                                 </RouterLink>
                             </a>
                         </li>
