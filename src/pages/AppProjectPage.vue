@@ -1,15 +1,3 @@
-<template>
-    <div class="container my-5">
-        <div class="text-end p-0 m-0" v-if="project.type"><span class="badge text-bg-info">{{ project.type.name }}</span>
-        </div>
-        <h1>{{ project.title }}</h1>
-        <p>{{ project.description }}</p>
-        <div class="d-flex gap-1" v-if="project.tecnologies">
-            <span class="badge bg-secondary" v-for="tecnology in project.tecnologies">{{ tecnology.name }}</span>
-        </div>
-    </div>
-</template>
-
 <script>
 import axios from 'axios';
 
@@ -40,3 +28,16 @@ export default {
     }
 }
 </script>
+
+<template>
+    <div class="container my-5">
+        <div class="text-end p-0 m-0" v-if="project.type"><span class="badge text-bg-info">{{ project.type.name }}</span>
+        </div>
+        <h1>{{ project.title }}</h1>
+        <p>{{ project.description }}</p>
+        <div class="d-flex gap-1" v-if="project.technologies">
+            <span class="badge bg-secondary" v-for="technology in project.technologies">{{ technology.name }}</span>
+        </div>
+    </div>
+</template>
+
